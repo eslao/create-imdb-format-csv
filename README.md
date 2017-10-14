@@ -1,2 +1,3 @@
 # create-imdb-format-csv
-convert Letterboxd account data to IMDB data
+Python scripts for converting film ratings data to IMDB format CSV files
+Input currently limited to Letterboxd rankings CSV
