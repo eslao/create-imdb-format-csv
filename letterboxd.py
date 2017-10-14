@@ -1,4 +1,4 @@
-import requests, csv, time, sys, re, codecs, json, string
+import requests, csv, time, sys, re, codecs, string
 from bs4 import BeautifulSoup
 
 def imdb_id_from_lb_uri(lb_uri):
