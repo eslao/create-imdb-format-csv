@@ -24,10 +24,10 @@ with open(file) as letterboxd_csv:
     reader = csv.DictReader(letterboxd_csv)
     for row in reader:
         if len(row['Letterboxd URI']) > 28:
-            position = position + 1
             print(row['Letterboxd URI'])
             imdb_id = imdb_id_from_lb_uri(row['Letterboxd URI'])
             if imdb_id != 'none':
+                position = position + 1
                 imdb_url = imdb_url_from_imdb_id(imdb_id)
                 new_row = [position, imdb_id, '', '', '', row['Name'], 'Feature Film', '', float(row['Rating']) * 2, '', '', row['Year'], '', '', '', imdb_url]
                 # to do: convert date(s)
